@@ -14,9 +14,9 @@
 ## 🚀 使用方式
 
 1. **复制组件代码到项目中**
-例如，将以下代码复制到src/components/ui/button.vuez中
+例如，将以下代码复制到src/components/ui/Button.vue中
    ```vue
-   <!-- 示例：EaButton.vue -->
+   <!-- 示例：Button.vue -->
    <template>
      <button :class="mergedClass">
        <slot />
@@ -32,11 +32,11 @@
 2. **在父组件中导入组件**
    ```vue
    <script setup>
-   import EaButton from '@/components/ui/EaButton.vue'
+   import Button from '@/components/ui/Button.vue'
    </script>
    
    <template>
-     <EaButton class="bg-blue-500 text-white hover:bg-blue-600">
+     <Button class="bg-blue-500 text-white hover:bg-blue-600">
        点我
-     </EaButton>
+     </Button>
    </template>
