@@ -14,7 +14,7 @@
 ## 🚀 使用方式
 
 1. **复制组件代码到项目中**
-
+例如，将以下代码复制到src/components/ui/button.vuez中
    ```vue
    <!-- 示例：EaButton.vue -->
    <template>
@@ -29,3 +29,13 @@
    const props = defineProps({ class: String })
    const mergedClass = computed(() => twMerge('px-4 py-2 rounded', props.class))
    </script>
+2. **在父组件中导入组件**
+   <script setup>
+import EaButton from '@/components/ui/EaButton.vue'
+</script>
+
+<template>
+  <EaButton class="bg-blue-500 text-white hover:bg-blue-600">
+    点我
+  </EaButton>
+</template>
