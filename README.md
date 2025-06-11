@@ -6,6 +6,16 @@
 - [`tailwindcss`](https://tailwindcss.com/)
 - [`tailwind-merge`](https://github.com/dcastil/tailwind-merge)
 
+```bash
+# 使用 npm
+npm install tailwindcss tailwind-merge
+
+# 或者使用 yarn
+yarn add tailwindcss tailwind-merge
+
+# 或者 pnpm
+pnpm add tailwindcss tailwind-merge
+
 ## ✨ 特性
 
 ✅ 直接复制组件代码到项目的组件文件夹中使用，每个组件都可作为模板自由修改  
