@@ -1,21 +1,31 @@
-轻量级、无依赖、完全可控的 Vue 3 UI 组件集，专为 Tailwind CSS 用户设计。
+# Easo UI
 
-✨ 特性
-✅ 无需安装：直接复制组件代码到项目中即可使用
+轻量级、完全可控的 Vue 3 UI 组件集，专为 Tailwind CSS 用户设计。
 
-✅ 完全可定制：每个组件都可作为模板自由修改
+用户目前仅需安装两个库：
+- [`tailwindcss`](https://tailwindcss.com/)
+- [`tailwind-merge`](https://github.com/dcastil/tailwind-merge)
 
-✅ 预设样式可覆盖：所有 class 可自定义，默认样式仅供参考
+## ✨ 特性
 
-✅ 支持 class 覆盖：内部已用 tailwind-merge 合并样式，传入的 class 优先
+✅ 直接复制组件代码到项目的组件文件夹中使用，每个组件都可作为模板自由修改  
+✅ 预设样式可覆盖：所有 class 可在父组件中使用 Tailwind 自定义，内部已使用 `tailwind-merge` 合并样式，**传入的 class 优先**
 
-✅ 无需额外配置：只要你已使用 Tailwind CSS，即可直接使用组件
+## 🚀 使用方式
 
-🚀 使用方式
-复制组件代码到项目中
+1. **复制组件代码到项目中**
 
-在页面中直接导入使用
+   ```vue
+   <!-- 示例：EaButton.vue -->
+   <template>
+     <button :class="mergedClass">
+       <slot />
+     </button>
+   </template>
 
-vue
-复制
-编辑
+   <script setup>
+   import { computed } from 'vue'
+   import { twMerge } from 'tailwind-merge'
+   const props = defineProps({ class: String })
+   const mergedClass = computed(() => twMerge('px-4 py-2 rounded', props.class))
+   </script>
