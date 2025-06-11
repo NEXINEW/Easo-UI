@@ -89,7 +89,7 @@
 2. **在页面中导入并使用组件**
     ```vue
         <script setup lang="ts">
-        import Button from '@/vue_01_base/Button.vue'
+        import Button from '@/components/ui/Button.vue'
 
         const handleClick = () => {
             console.log('Button clicked')
