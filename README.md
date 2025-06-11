@@ -30,12 +30,13 @@
    const mergedClass = computed(() => twMerge('px-4 py-2 rounded', props.class))
    </script>
 2. **在父组件中导入组件**
+   ```vue
    <script setup>
-import EaButton from '@/components/ui/EaButton.vue'
-</script>
-
-<template>
-  <EaButton class="bg-blue-500 text-white hover:bg-blue-600">
-    点我
-  </EaButton>
-</template>
+   import EaButton from '@/components/ui/EaButton.vue'
+   </script>
+   
+   <template>
+     <EaButton class="bg-blue-500 text-white hover:bg-blue-600">
+       点我
+     </EaButton>
+   </template>
