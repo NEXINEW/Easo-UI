@@ -1,0 +1,14 @@
+[
+    {
+        "key": "button",
+        "name": "按钮",
+        "category": "通用",
+        "description": "常用按钮组件"
+    },
+    {
+        "key": "uploader-image",
+        "name": "上传图片",
+        "category": "表单",
+        "description": "图片上传组件"
+    }
+]
