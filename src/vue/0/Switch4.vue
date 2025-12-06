@@ -1,3 +1,20 @@
+<!-- 使用方法 -->
+<!-- 
+<script setup lang="ts">
+import Switch from './components/Switch.vue';
+import { ref } from 'vue';
+const active = ref<boolean>(false)
+const toggle = () => {
+    active.value = !active.value
+}
+</script>
+
+<template>
+    <Switch class="w-15 h-5 rounded-none" track-base-class="bg-blue-400" thumb-class="w-3 h-3 bg-white"
+        :duration="200" timing-function="ease-out" :active="active" @click="toggle" />
+</template> 
+-->
+
 <script setup lang="ts">
 import { useAttrs, computed, useTemplateRef, ref, onMounted, nextTick, onBeforeUnmount } from 'vue';
 import { twMerge } from 'tailwind-merge';
